@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>My first page</title>
+ <style>
+  .footer {
+   color: aqua;
+  }
+ </style>
 </head>
 <body>
- <h1>Hello, Students!</h1>
+ <h1 class="header1 myclass1 myclass2" id="thisHeader1" title="This is hello message!">Hello, <a href="https://www.bgu.ac.il/students-lobby/">Students</a>!</h1>
 <!--  <br>-->
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda eos eveniet expedita hic nemo quis quisquam sapiente sint veritatis.</p>
+ <p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing elit. Aliquid assumenda eos eveniet expedita hic nemo quis quisquam sapiente sint veritatis.</p>
  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda eos eveniet expedita hic nemo quis quisquam sapiente sint veritatis.</p>
  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore est et laborum nisi repellendus similique!</p>
+ <br>
  <h2>Hello, Students!</h2>
  <h3>Hello, Students!</h3>
  <h4>Hello, Students!</h4>
@@ -17,6 +23,137 @@
  <h6>Hello, Students!</h6>
 
 
+<!--<h1>This is a secret message!</h1>-->
+
+<h2>Lists</h2>
+
+<h3>Unordered List</h3>
+
+<ul>
+ <li>item</li>
+ <li>item</li>
+ <li>item</li>
+ <li>item</li>
+ <li>item</li>
+</ul>
+
+<h3>Ordered List</h3>
+
+<ol>
+ <li>item</li>
+ <li>item</li>
+ <li>item</li>
+ <li>item</li>
+ <li>item</li>
+</ol>
+
+
+ <h2>Tables</h2>
+
+ <table>
+  <thead>
+  <tr>
+   <th>Name</th>
+   <th>Email</th>
+   <th>Age</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+   <td> </td>
+   <td> </td>
+   <td><br></td>
+  </tr>
+  <tr>
+   <td>-</td>
+   <td>mail@mail.com</td>
+   <td>-</td>
+  </tr>
+  <tr>
+   <td>Brad</td>
+   <td>mail@mail.com</td>
+   <td>35</td>
+  </tr>
+  <tr>
+   <td>Brad</td>
+   <td>mail@mail.com</td>
+   <td>35</td>
+  </tr>
+  </tbody>
+ </table>
+ 
+ <h2>Forms</h2>
+
+ <form action="" method="GET">
+  <input type="text" name="FirstName" placeholder="Insert your First Name" disabled>
+  <br>
+  <br>
+  <input type="text" name="LastName" placeholder="Insert your Last Name">
+  <br>
+  <br>
+  <input type="email" name="email" placeholder="Insert your Email">
+  <br>
+  <br>
+  <textarea name="message" placeholder="Insert your message"></textarea>
+  <br>
+  <br>
+  Gender (select one):
+  <select name="gender">
+   <option value="male">Male</option>
+   <option value="female">Female</option>
+   <option value="other">Other</option>
+  </select>
+  <br>
+  <br>
+  Age:
+  <input type="number" disabled>
+  <br>
+  <br>
+  Date:
+  <input type="date">
+  <br>
+  <br>
+  Password:
+  <input type="password">
+  <br>
+  <br>
+  <input type="submit" value="Tishlah AAAAAAkol!">
+
+ </form>
+
+ <h2>Button</h2>
+
+ <button onclick="">Click me!</button>
+
+ <h2>Images</h2>
+ <img src="pics/bird.png" alt="Here supposed to be a bird." style="width: 300px">
+
+ <a href="pics/bird2.png">
+  <img src="pics/bird2.png" alt="Here supposed to be a bird." style="width: 300px">
+ </a>
+
+ <h2>Quotations</h2>
+ <blockquote cite="">Lorem ipsum dolor sit.</blockquote>
+ <p>THe <abbr title="World Wide Web">WWW</abbr> is awsome.</p>
+ <p><cite>Lorem ipsum</cite> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, voluptatum!</p>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+<header></header>
+<nav></nav>
+<section></section>
+<article></article>
+<aside></aside>
+<!--<footer class="footer" id="thisSpecificFooterID123" style="color: yellowgreen"><h1>Footer</h1></footer>-->
+<footer class="footer" id="thisSpecificFooterID123"><h1>Footer</h1></footer>
 
 </body>
 </html>
