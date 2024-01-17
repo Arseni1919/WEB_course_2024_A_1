@@ -1,26 +1,79 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     /*background-color: goldenrod;*/
     /*background-color: #55a5a5;*/
-    background-color: rgb(89, 141, 150);
+    /*background-color: rgb(89, 141, 150);*/
+    background-color: #fff;
+    /*background-image: url("/pics/bird2.png");*/
+    /*background-position: 1px 2px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center bottom;*/
+
 
 }
 
-h1 {
-    color: orange;
+/*h1 {*/
+/*    color: orange;*/
+/*    background-color: black;*/
+/*    padding: 10px;*/
+/*    !*font-family: Arial sans-serif;*!*/
+/*    font-family: Verdana, sans-serif;*/
+/*    !*font-family: "Times New Roman", serif;*!*/
+/*}*/
+
+h2 {
+    font-family: "Al Bayan", serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
     background-color: black;
-    padding: 10px;
-    /*font-family: Arial sans-serif;*/
-    font-family: Verdana, sans-serif;
-    /*font-family: "Times New Roman", serif;*/
+    padding: 5px;
+    border-radius: 7px;
+    margin: 3px;
 }
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: red;
+}
+
+.boxModel h2 {
+    color: orange;
+}
+/*.boxModel:hover {*/
+/*    background-color: bisque;*/
+/*}*/
 
 .boxModel {
+    background-color: azure;
+    /*padding: 10px;*/
+    /*margin-top: 100px;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 80px;*/
+    /*margin-bottom: 10px;*/
+    /*margin: 100px 20px 80px 10px;*/
+    margin: 50px 100px;
+    /*padding: 70px 10px;*/
     padding: 10px;
-    margin: 10px;
     font-size: 25px;
+    /*border-top: 10px red solid;*/
+    /*border-right: 10px red dotted;*/
+    /*border-bottom: 30px orange solid;*/
     border: 5px red solid;
+    border-radius: 30px;
 
 }
 
@@ -43,10 +96,81 @@ p {
 
 .boldText {
     font-weight: bold;
-    color: crimson;
+    color: white;
 }
 
 .container {
     width: 80%;
     margin: auto;
+}
+
+
+
+/*p h1, h2, h3 {*/
+/*    color: red;*/
+/*}*/
+
+/*.my-form input[type='text'], .my-form textarea {*/
+/*    padding: 8px;*/
+/*    width: 50%;*/
+/*}*/
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input, .my-form textarea {
+    padding: 8px;
+    width: 50%;
+}
+
+.my-form input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+
+.p-box {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.p-box h1 {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+body .my-h2 {
+    position: fixed;
+    top: 400px;
+}
+
+
+ul li:nth-child(even) {
+    background: red;
+}
+
+@media (max-width: 700px) {
+    ul {
+        display: none;
+    }
+
+    .boxModel {
+        margin: 10px;
+        padding: 10px;
+        width: 80%;
+    }
 }
