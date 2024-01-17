@@ -1,0 +1,52 @@
+
+
+body {
+    /*background-color: goldenrod;*/
+    /*background-color: #55a5a5;*/
+    background-color: rgb(89, 141, 150);
+
+}
+
+h1 {
+    color: orange;
+    background-color: black;
+    padding: 10px;
+    /*font-family: Arial sans-serif;*/
+    font-family: Verdana, sans-serif;
+    /*font-family: "Times New Roman", serif;*/
+}
+
+.boxModel {
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    border: 5px red solid;
+
+}
+
+p {
+    /*font-size: 30px;*/
+    /*font-family: Georgia, sans-serif;*/
+    /*font-weight: bold;*/
+    font: normal 30px Tahoma, sans-serif;
+    /*line-height: 2em;*/
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#paragraph2 {
+    color: black;
+    background-color: white;
+}
+
+.boldText {
+    font-weight: bold;
+    color: crimson;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
