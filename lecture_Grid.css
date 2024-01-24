@@ -40,6 +40,7 @@ body {
     background: cadetblue;
     color: white;
     /*margin: 5px;*/
+    border-radius: 10px;
 }
 
 /*.item:nth-child(2) {*/
