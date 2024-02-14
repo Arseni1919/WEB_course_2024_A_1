@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main_block %}
+    {% set age=30 %}
+    <h1 class="{% if name %} green {% else %} black {% endif %}">Hello from Flask Lecture!</h1>
+    {% if name %}
+        <h2>Hello to {{name | upper() }} {{second_name | default('***', false)}}!</h2>
+        <h3>My age is: {{age}}</h3>
+        <h2>My Hobbies:</h2>
+        <ul>
+            {% for hobby in hobbies %}
+                <li>{{hobby}}</li>
+            {% endfor %}
+        </ul>
+
+    <h2>My Details:</h2>
+        <ol>
+            {% for k, v in user_details.items() %}
+                <li>{{k}}: the value is {{v}}</li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <h2>Hello, stranger!</h2>
+    {% endif %}
+{% endblock %}

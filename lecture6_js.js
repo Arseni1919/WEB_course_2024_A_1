@@ -131,35 +131,37 @@
 //     document.querySelector('body').style.backgroundColor = 'cadetblue'
 // })
 
-const myFrom = document.querySelector('#my-form')
-const nameInput = document.querySelector('#name')
-const emailInput = document.querySelector('#email')
-const msg = document.querySelector('.msg')
-const userList = document.querySelector('.users')
 
-const onSubmit = (e) => {
-    e.preventDefault()
-    // console.log(nameInput)
-    // console.log(nameInput.value)
-    // console.log(emailInput)
-    // console.log(emailInput.value)
-    if(nameInput.value === '' || emailInput.value === ''){
-        msg.innerHTML = 'Please enter all fields!'
-        msg.classList.add('error')
-        setTimeout(()=>{
-            msg.innerHTML = ''
-            msg.classList.remove('error')
-        }, 1000)
-    } else {
-        const li = document.createElement('li')
-        li.innerHTML = `Name: ${nameInput.value} | Email: ${emailInput.value}`
-        userList.appendChild(li)
-        nameInput.value = ''
-        emailInput.value = ''
-    }
-}
 
-myFrom.addEventListener('submit', onSubmit)
+// const myFrom = document.querySelector('#my-form')
+// const nameInput = document.querySelector('#name')
+// const emailInput = document.querySelector('#email')
+// const msg = document.querySelector('.msg')
+// const userList = document.querySelector('.users')
+//
+// const onSubmit = (e) => {
+//     e.preventDefault()
+//     // console.log(nameInput)
+//     // console.log(nameInput.value)
+//     // console.log(emailInput)
+//     // console.log(emailInput.value)
+//     if(nameInput.value === '' || emailInput.value === ''){
+//         msg.innerHTML = 'Please enter all fields!'
+//         msg.classList.add('error')
+//         setTimeout(()=>{
+//             msg.innerHTML = ''
+//             msg.classList.remove('error')
+//         }, 1000)
+//     } else {
+//         const li = document.createElement('li')
+//         li.innerHTML = `Name: ${nameInput.value} | Email: ${emailInput.value}`
+//         userList.appendChild(li)
+//         nameInput.value = ''
+//         emailInput.value = ''
+//     }
+// }
+//
+// myFrom.addEventListener('submit', onSubmit)
 
 
 
