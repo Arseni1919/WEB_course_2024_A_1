@@ -8,7 +8,8 @@
     {% set age=30 %}
     <h1 class="{% if name %} green {% else %} black {% endif %}">Hello from Flask Lecture!</h1>
     {% if name %}
-        <h2>Hello to {{name | upper() }} {{second_name | default('***', false)}}!</h2>
+        <h2>Hello to {{name | upper() }}!</h2>
+        <h2>Email: {{second_name | default('***', false)}}</h2>
         <h3>My age is: {{age}}</h3>
         <h2>My Hobbies:</h2>
         <ul>

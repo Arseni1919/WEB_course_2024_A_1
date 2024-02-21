@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock %}
+
+{% block main_block %}
+
+<h1>Welcome to LogIn Page!</h1>
+
+<!--<h2>Form of GET method:</h2>-->
+<!--{% if username %}-->
+<!--    <h3>User: {{username}}</h3>-->
+<!--    <h3>Email: {{email}}</h3>-->
+<!--{% endif %}-->
+<!--<form method="GET" action="/login">-->
+<!--    Username:-->
+<!--    <br>-->
+<!--    <input type="text" name="username">-->
+<!--    <br>-->
+<!--    Email:-->
+<!--    <br>-->
+<!--    <input type="email" name="email">-->
+<!--    <br>-->
+<!--    Password:-->
+<!--    <br>-->
+<!--    <input type="password" name="password">-->
+<!--    <br>-->
+<!--    <input type="submit" value="Submit">-->
+<!--</form>-->
+
+
+<h2>Form of POST method:</h2>
+{% if session.get('logged_in') %}
+    <h3>User: {{session.get('username')}}</h3>
+    <h3>Email: {{session.get('email')}}</h3>
+{% else %}
+<form method="POST" action="/login">
+    Username:
+    <br>
+    <input type="text" name="username">
+    <br>
+    Email:
+    <br>
+    <input type="email" name="email">
+    <br>
+    Password:
+    <br>
+    <input type="password" name="password">
+    <br>
+    <input type="submit" value="Submit">
+</form>
+{% endif %}
+
+<!--    {% if session['logedin'] %}-->
+<!--        <h1>Welcome, {{ session['username'] | upper() }}</h1>-->
+<!--    {% else %}-->
+<!--        <h1>Welcome to Log-In Page</h1>-->
+<!--        {% if message %}-->
+<!--            <h2>{{ message }}</h2>-->
+<!--        {% endif %}-->
+<!--        <h2>Login Form:</h2>-->
+<!--        <form action="/log_in" method="post">-->
+<!--            <input type="text" name="username" placeholder="Username">-->
+<!--            <input type="password" name="password" placeholder="Password">-->
+<!--            <input type="submit">-->
+<!--        </form>-->
+<!--    {% endif %}-->
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{#{% extends 'index.html' %}#}
+{##}
+{#{% block header %}#}
+{#        {% set page_name = 'Log In Page' %}#}
+{#        {% include('header.html') %}#}
+{#{% endblock %}#}
+{##}
+{#{% block Main %}#}
+{#    <form method="POST" action="/log_in">#}
+{#        <input name="username" type="text" placeholder="name">#}
+{#        <input name="lastname" type="text" placeholder="last name">#}
+{#        <input type="submit">#}
+{#    </form>#}
+{#{% endblock %}#}

@@ -2,4 +2,11 @@
   <div class="title hItem">My Website</div>
   <a href="/" class="hItem">Home Page</a>
   <a href="/about" class="hItem">About Page</a>
+  <a href="/users" class="hItem">Users Page</a>
+  {% if session.get('logged_in') %}
+
+  <a href="/logout" class="hItem">Log Out</a>
+  {% else %}
+  <a href="/login" class="hItem">Log In</a>
+  {% endif %}
 </header>

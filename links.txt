@@ -1,0 +1,13 @@
+https://
+www.yad2.co.il
+/products/item/hdq1p33f
+
+
+http://127.0.0.1:5000
+/login
+?
+username=aaa
+&
+email=a%40a.com
+&
+password=aaa
