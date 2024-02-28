@@ -3,12 +3,12 @@
 from flask import Flask, redirect, url_for
 from flask import render_template
 from flask import request, session
+from flask import jsonify
+from collections import OrderedDict
 
 
 app = Flask(__name__)
 app.secret_key = '123'
-
-
 
 @app.route('/')
 def main_page():
@@ -40,9 +40,35 @@ def about_page():
     return render_template('about.html')
 
 
-@app.route('/users')
-def users_func():
-    return render_template('users.html')
+@app.route('/users', defaults={'user_id': 123})
+@app.route('/users/<int:user_id>')
+def users_id_func(user_id):
+    # DB ...
+    return render_template('users.html', user_id=user_id)
+
+
+@app.route('/<category>/<int:cat_id>/<subcategory>/name')
+def foo_func(category, cat_id, subcategory):
+    return f'{category=}, {cat_id=}, {subcategory=}'
+
+
+@app.route('/api/users/<int:user_id>')
+def api_users(user_id):
+    # DB ...
+    # user_data = {
+    #     'name': 'Dana',
+    #     'id': user_id,
+    #     'hobby': 'computers'
+    # }
+    user_data = OrderedDict()
+    user_data['name'] = 'Dana'
+    user_data['id'] = user_id
+    user_data['hobby'] = 'computers'
+
+    for k, v in user_data.items():
+        print(f'{k}: {v}')
+
+    return jsonify(user_data)
 
 
 @app.route('/logout', methods=['GET'])
@@ -78,6 +104,8 @@ def login_func():
             return render_template('login.html',
                                username=username, email=email)
         return render_template('login.html')
+
+
 
 # user_dict = {
 #     'arsenip': '1919',
