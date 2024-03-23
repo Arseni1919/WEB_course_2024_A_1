@@ -46,3 +46,24 @@ a {
 li {
     margin-bottom: 10px;
 }
+
+.ex {
+    background-color: #333333;
+    border: white 2px solid;
+}
+
+.p2, .p3, .p4 {
+    width: 20px;
+}
+
+.p1, .p3, .p4 {
+    height: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.sub-container-2 {
+    display: flex;
+}
